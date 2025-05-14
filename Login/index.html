@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="PageWrapper">
+        <div id="ContainerLogin">
+            <form id="FormLog">
+                <h1 id="Title">Bem vindo(a)</h1>
+                <input id="InputsEmail" type="text" placeholder="Email do usuario">
+                <input id="InputsSenha" type="password" placeholder="Senha">
+                <button id="BtnLogin" type="submit">Login</button> 
+
+                <label id="LabelCheak">
+                    <input type="checkbox">
+                    Continuar conectado
+                </label>
+
+                <a id="LinkCad" href="CadUsuario.html">Cadastre-se</a>
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+   /* document.getElementById("BtnLogin").addEventListener("click", function(event){
+        event.preventDefault();
+        
+        const senha = document.getElementById("InputsSenha");
+
+        if(Number(senha.value) === 231020){
+            window.location.href = "https://www.google.com";
+        }else{
+            alert("Senha incorreta")
+        }
+
+    }) */
+
+    document.addEventListener("DOMContentLoaded", function(){
+
+        const form = document.getElementById("FormLog");
+        const emailInput = document.getElementById("InputsEmail");
+        const senhaInput = document.getElementById("InputsSenha");
+
+        form.addEventListener("submit", function(event){
+            event.preventDefault();
+
+            let emailSalvo = localStorage.getItem("email");
+            let senhaSalva = localStorage.getItem("senha");
+
+            if(emailSalvo === emailInput.value && senhaSalva === senhaInput.value){
+                window.location.href = "https://www.google.com";
+            }else{
+                alert("email ou senha errado");
+            }
+        })
+    })
+    </script>
+</body>
+</html>

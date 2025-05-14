@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+}
+
+#PageWrapper{
+    background: #689ff7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#ContainerLogin{
+    height: 400px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.1); /* Fundo transparente */
+    backdrop-filter: blur(10px); /* Desfoque */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+#FormLog, #FormCad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+}
+
+#Title{
+    font-family: Oswald;
+    color: blue;
+}
+
+#InputsEmail, #InputsSenha{
+    width: 40%;
+    height: 30px;
+}
+
+.InputsSenha{
+    width: 100%;
+    height: 30px;
+}
+
+#BtnLogin, #BtnCad{
+    width: 20%;
+    height: 30px;
+}
+
+.ContainerInput{
+    border: 1px solid red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 41%;
+}
+
+.BtnMostra{
+    position: absolute;
+    right: 10px;
+    height: 30px;
+}
+
+#LabelCheak{
+    display: flex;
+    gap: 8px;
+}
+
+#LinkCad{
+
+}

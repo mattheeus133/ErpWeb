@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro usuario</title>
+</head>
+<body>
+    <div id="PageWrapper">
+        <div id="ContainerLogin">
+            <form id="FormCad">
+                <h1 id="Title">Cadastro do usuario</h1>
+                <input id="InputsEmail" class="InputsVerf" type="text" placeholder="Email do usuario">
+
+                <div class="ContainerInput">
+                    <input id="InputsSenha" class="InputsSenha InputsVerf"  type="password" placeholder="Senha">
+
+                    <button class="BtnMostra" id="BtnMostra">Mostra</button>
+                </div>
+
+                <div class="ContainerInput">
+
+                    <input class="InputsSenha InputsVerf" 
+                    id="InputsConfSenha" type="password" placeholder="Confirma senha">
+
+                    <button class="BtnMostra">Mostra</button>
+                </div>    
+
+                <p id="ErroMsg">Todos os campos deve ser preenchidos</p>
+
+                
+                <button id="BtnCad" type="submit">Cadastra</button>
+
+                <a id="Link" href="index.html">Voltar</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
