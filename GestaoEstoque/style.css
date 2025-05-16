@@ -2,21 +2,43 @@ body{
     margin: 0;
 }
 #cabecalho{
-    border: 1px solid red;
+    margin: 0;
 }
 #nav{
     list-style: none;
     display: flex;
     flex-direction: row;
-    border: solid 1px red;
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0;
     padding: 0;
-
+    border: 2px solid #4169E1;
 }
 
 li{
-    border: 1px solid red;
-    margin-bottom: 30px;
+    margin: 0;
+    padding: 10px;
+    width: 30%;
+    text-align: center;
+    border: 2px solid #4169E1;
+}
 
+li:hover{
+    background: #4169E1;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Inicio do main*/
+
+#inputBuscar{
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 70%;
+    width: 20%;
+}
+
+#btnBuscar{
+    height: 25px;
+    border: 2px solid black;
 }
